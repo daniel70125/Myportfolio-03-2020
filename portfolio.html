@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<!-- SCROLL REVEAL JS -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css" >
+    <!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Angular JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="">
+	 <div class="row">
+  		<div style="background-color: {{background}}" id="leftBox" class="col-lg-3 col-11">
+  			<img style="width:150px; height:150px; padding-top:20px; border-radius: 50%" src="blackLogo.png">
+  			<h2><span id="mainSpan">Daniel</span> Wright</h2>
+  			<div id="divHead"><p>WEB DEVELOPER</p></div>
+  			<div id="linkDiv">
+  				<a href="https://www.linkedin.com/in/daniel70125/" class="fa fa-linkedin hover"></a>
+  				<a href="https://github.com/daniel70125" class="fa fa-github hover"></a>
+  				<a href="operationspark.slack.com" class="fa fa-slack hover"></a>
+  			</div>
+  			<div id="contactBox">
+  				<a href="" class="fa fa-map-marker"></a>
+  				<span>- New Orleans, LA</span> <br>
+  				<a href="mailto: dwrighttt504@gmail.com" class="fa fa-envelope hover"></a>
+  				<span>- Message Me!</span>
+  			
+  				<p id="angular">White is kind of boring isn't it? Enter a color below to change both box's background! :) </p>
+  				<input placeholder="Enter Color: Ex. 'Grey'" type="text" ng-model="background">
+  			</div>
+  		</div>
+
+
+  		<!--Right Column -->
+  		<div id="rightBox" style="background-color: {{background}}" class="col-lg-8 col-11">
+  			<div class="col-sm-10 col-lg-12 row">
+  				<div class="col-8 col-lg-9"><h4 id="h4" class="col-lg-10"><a href="index.html">Home</a></h4></div>
+  				<div class="col-4 col-lg-3"><a href="WebDev19.pdf"><button style="margin:10px" class="btn btn-primary">My Resume</button></a></div>
+  			</div>
+		     <div id="mainBox">
+		     	<h3>My Projects!</h3>
+		     	<p></p>
+		    	<div class="row">
+		     		<div class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style="margin:auto">
+		     				<span>Rock, Papers, Scissors game.</span>
+		     				<hr/>
+		     				<a href="RPS.html" data-toggle="tooltip" title="Rock, Papers, Scissors game."><img style="width:100%" src="RPS.png"></a>
+		     			</div>
+		     		</div>
+		     		<div class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style=" margin:auto">
+		     				<span>Calculator</span>
+		     				<hr/>
+		     				<a href="calculator.html" data-toggle="tooltip" title="Calculator V.1"><img style="position: relative;top: 15px;width:100%" src="calculator.png"></a>
+		     			</div>
+		     		</div>
+		     		<div class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style=" margin:auto">
+		     				<span>To-Do-List</span>
+		     				<hr/>
+		     				<a href="append.html" data-toggle="tooltip" title="To-Do List"><img style="position: relative;top: 15px;width:100%" src="to-do.png"></a>
+		     			</div>
+		     		</div>
+		     		<div class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style=" margin:auto">
+		     				<span>Contact Form (PHP & MySQL)</span>
+		     				<hr/>
+		     				<a href="contactme.html"><img style="position: relative;width:100%" src="contactme.png"></a>
+		     			</div>
+		     		</div>
+		     		<div style="opacity:0.0" class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style=" margin:auto">
+		     				<span>Contact Form (PHP & MySQL)</span>
+		     				<hr/>
+		     				<!-- <a href="contactme.html"><img style="position: relative;width:100%" src="contactme.png"></a> -->
+		     			</div>
+		     		</div>
+		     		<div style="opacity:0.0" class="row col-9 col-lg-3 mainCont mainCont2 sr1">
+		     			<div style=" margin:auto">
+		     				<span>Contact Form (PHP & MySQL)</span>
+		     				<hr/>
+		     				<!-- <a href="contactme.html"><img style="position: relative;width:100%" src="contactme.png"></a> -->
+		     			</div>
+		     		</div>
+		     	</div>
+		    </div>
+  		</div> <!-- End of right column -->
+  		
+	 </div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		})
+		var sr = ScrollReveal();
+		// sr = each of the four boxes. delete class later with scroll reveal
+		sr.reveal('.sr1', { delay: 500, reset: true });
+		sr.reveal('.sr2', { delay: 700, reset: true });
+		sr.reveal('.sr3', { delay: 900, reset: true });
+		sr.reveal('.sr4', { delay: 1100, reset: true });
+	</script>
+</body>
+</html>

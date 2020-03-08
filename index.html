@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<!-- SCROLL REVEAL JS -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css" >
+    <!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Angular JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+	<div class="container" ng-app="">
+	 <div class="row">
+  		<div style="background-color: {{background}}" id="leftBox" class="col-lg-3 col-11">
+  			<img style="width:150px; height:150px; padding-top:20px; border-radius: 50%" src="blackLogo.png">
+  			<h2><span id="mainSpan">Daniel</span> Wright</h2>
+  			<div id="divHead"><p>WEB DEVELOPER</p></div>
+  			<div id="linkDiv">
+  				<a href="https://www.linkedin.com/in/daniel70125/" class="fa fa-linkedin hover"></a>
+  				<a href="https://github.com/daniel70125" class="fa fa-github hover"></a>
+  				<a href="operationspark.slack.com" class="fa fa-slack hover"></a>
+  			</div>
+  			<div id="contactBox">
+  				<a href="" class="fa fa-map-marker"></a>
+  				<span>- New Orleans, LA</span> <br>
+  				<a href="mailto: dwrighttt504@gmail.com" class="fa fa-envelope hover"></a>
+  				<span>- Message Me!</span>
+  			
+  				<p id="angular">White is kind of boring isn't it? Enter a color below to change both box's background! :) </p>
+  				<input placeholder="Enter Color: Ex. 'Grey'" type="text" ng-model="background">
+  			</div>
+  		</div>
+
+
+  		<!--Right Column -->
+  		<div id="rightBox" style="background-color: {{background}}" class="col-lg-8 col-11">
+  			<div class="col-sm-10 col-lg-12 row">
+  				<div class="col-8 col-lg-10"><h4 id="h4" class="col-lg-10">About Me</h4></div>
+  				<div class="col-4 col-lg-2"><a href="portfolio.html"><button style="margin:10px" class="btn btn-primary">Portfolio</button></a></div>
+  			</div>
+  			<p style="padding-left:10px;"> Tech is my passion with over 2 years of Web Development.
+		        I work mostly with <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>. 
+		        On the back-end I can use <span>PHP</span> and <span>MySQL</span> when needed.
+		        From <span>UX</span> to <span>UI</span> I can do it all.
+		     </p>
+		     <div id="mainBox">
+		     	<h3>What I Do</h3>
+		    	<div class="row">
+		     		<div class="row col-9 col-lg-5 mainCont sr1">
+		     			<div style="width:13%; margin:auto">
+		     				<i style="padding:10px 0px; font-size:32px"class="fa fa-laptop"></i>
+		     			</div>
+		     			<div style="width:75%; margin:auto">
+		     			<span style="font-weight:bold;  text-decoration: underline;">Web Development</span>
+		     			<p>Able to create beautiful sites by using <span>HTML, CSS, and JS<span>.</p>
+		     			</div>
+		     		</div>
+		     		
+		     		<div class="row row col-9 col-lg-5 mainCont sr2">
+		     			<div style="width:13%; margin:auto">
+		     				<i style="padding:10px 0px; font-size:32px"class="fa fa-paper-plane"></i>
+		     			</div>
+		     			<div style="width:75%; margin:auto">
+		     			<span style="font-weight:bold;  text-decoration: underline;">Email Development</span>
+		     			<p>Able to create <span>HTML EMAILS</span> quickly and effective</p>
+		     			</div>
+		     		</div>
+
+		     		<div class="row row col-9 col-lg-5 mainCont sr3">
+		     			<div style="width:13%; margin:auto">
+		     				<i style="padding:10px 0px; font-size:70px"class="fa fa-mobile"></i>
+		     			</div>
+		     			<div style="width:75%; margin:auto">
+		     			<span style="font-weight:bold;  text-decoration: underline;">Responsive Design</span>
+		     			<p>Able to create mobile responsive sites at a professional level</p>
+		     			</div>
+		     		</div>
+
+		     		<div class="row row col-9 col-lg-5 mainCont sr4">
+		     			<div style="width:13%; margin:auto">
+		     				<i style="padding:10px 0px; font-size:32px"class="fa fa-laptop"></i>
+		     			</div>
+		     			<div style="width:75%; margin:auto">
+		     			<span style="font-weight:bold;  text-decoration: underline;">Back-End</span>
+		     			<p>Using <span>MySQL and PHP</span> I can create a database for storing information from users</p>
+		     			</div>
+		     		</div>
+		     	</div>
+		    </div>
+  		</div>
+	 </div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		})
+		var sr = ScrollReveal();
+		// sr = each of the four boxes. delete class later with scroll reveal
+		sr.reveal('.sr1', { delay: 500, reset: true });
+		sr.reveal('.sr2', { delay: 600, reset: true });
+		sr.reveal('.sr3', { delay: 700, reset: true });
+		sr.reveal('.sr4', { delay: 800, reset: true });
+	</script>
+</body>
+</html>

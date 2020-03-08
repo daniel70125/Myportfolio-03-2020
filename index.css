@@ -1,0 +1,157 @@
+body {
+	background-image: url("gradient.jpg");
+    margin-bottom: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+#leftBox {
+	text-align: center;
+	background-color: rgb(250, 250, 251);
+	border-radius: 10px;
+	margin-top:10px;
+	padding:0px;
+}
+.container {
+	position: relative;
+    top: 70px;
+}
+.row {
+	justify-content: space-evenly;
+}
+#leftBox h2 {
+	margin-top:10px;
+}
+#mainSpan {
+	font-weight: 100;
+}
+#divHead {
+	border-radius: 20px;
+	width:65%; 
+	margin:10px auto;
+	background-color: rgb(236, 236, 244);
+}
+#divHead p {
+	padding:7px;
+}
+#linkDiv a{
+	font-size: 30px;
+	margin: 0px 3px;
+}
+#contactBox {
+	margin:50px 0px 10px 0px;
+	text-align: center;
+	background-color: rgb(236, 236, 244);
+}
+#contactBox a{
+	font-size: 30px;
+}
+#rightBox {
+	margin-top:10px;
+	background-color: rgb(250, 250, 251);
+	border-radius: 10px;
+	padding:0px;
+}
+#rightBox h4 {
+	padding:15px;
+	text-decoration: underline;
+}
+#angular {
+	margin:50px auto 10px;
+}
+#menuBtn {
+	font-size:32px;
+	float:right;
+	padding:15px;
+	position: relative;
+    
+}
+#rightBox span {
+	color:blue;
+}
+#contactBox input {
+	margin-bottom: 10px;
+}
+#mainBox {
+	background-color: rgb(236, 236, 244);
+}
+#mainBox h3 {
+	padding:25px;
+}
+.mainCont {
+	background-color: rgb(250, 250, 251);
+	margin-bottom: 46px;
+	padding: 18px;
+	box-shadow: 0px 0px 12px 2px blue;
+}
+.mainCont i {
+	padding:10px 0px;
+	font-size:37px;
+	color:blue;
+}
+.mainCont p {
+	margin-top: 10px;
+	font-size: 14px;
+}
+#menuIcon {
+	font-size: 32px;
+    margin: 10px auto;
+    width: 20%;
+    position: relative;
+    left: 40px;
+}
+hr {
+    border-radius: 48%;
+    width: 65%;
+    border: 1px solid black;
+    margin: 5px auto;
+}
+
+/* second page - portflio.html added on */
+
+.mainCont2 {
+	margin:10px;
+	padding:7px;
+	text-align: center;
+}
+
+/* contact Me HTML page CSS */
+
+.contactme {
+	margin: auto;
+    background-image: url(Pictures/image2.png);
+    color: blue;
+    background-size: cover;
+}
+#right-column {
+	width: 70%;
+    margin: auto;
+}
+label {
+	font-size: 20px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: #D3D3D3;
+}
+
+#left-column {
+    text-align: center;
+    }
+
+@media screen and (max-width:959px) {
+	#right-column {
+		width:100%;
+	}
+}
+#left-column img {
+	margin-top: 20px;
+    width: 10%;
+}
